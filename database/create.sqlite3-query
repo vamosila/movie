@@ -1,0 +1,20 @@
+-- database: ../database.sqlite
+
+SELECT * FROM "movies";
+
+create table movies(
+  id integer not null primary key autoincrement,
+  title varchar(100),
+  director varchar(100),
+  release_year integer,
+  genre varchar(50)
+);
+
+INSERT INTO movies
+(id, title, director, release_year, genre)
+VALUES
+(1, 'Macskafogó', 'Ternovszky Béla', 1986, 'Animációs'),
+(2, 'Pappa Pia', 'Csupó Gábor', 2017, 'Vígjáték'),
+(3, 'Valami Amerika', 'Herendi Gábor', 2002, 'Vígjáték'),
+(4, 'A tanú', 'Bacsó Péter', 1969, 'Színmű'),
+(5, 'Saul fia', 'Nemes Jeles László', 2015, 'Történelmi');
